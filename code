@@ -1,0 +1,20 @@
+function random_function_1() {
+    console.log("This is random function 1");
+}
+
+function random_function_2() {
+    console.log("This is random function 2");
+}
+
+// Інші функції random_function_3, random_function_4, і так далі...
+
+function random_function_100() {
+    console.log("This is random function 100");
+}
+
+// Створення масиву з усіма функціями
+var random_functions = [random_function_1, random_function_2, ..., random_function_100];
+
+// Виклик рандомної функції
+var random_function = random_functions[Math.floor(Math.random() * random_functions.length)];
+random_function();
